@@ -20,37 +20,59 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 ##主要适用技术栈
-.前端MVVM框架：Vue.JS 2.x
-.开发工作流：Webpack 1.x
-.路由：Vue-Router 2.x
-.数据交互：Axios
-.JS插件：rem.js
-.CSS重置:reset.js
+* 前端MVVM框架：Vue.JS 2.x
+* 开发工作流：Webpack 1.x
+* 路由：Vue-Router 2.x
+* 数据交互：Axios
+* 代码风格检测：Eslint
+* JS插件：rem.js
+* CSS重置:reset.js
 
-##项目目录结构
-    webpack
-      |---build
-      |---src
-        |---assets 资源
-        |---components组件
-          |---common    通用组件
-          |---movie    电影组件
-            |---Movie.vue 电影组件
-            |---MovieDetailvue 电影详情组件
-          |---music    音乐组件
-            |---Music.vue 音乐组件
-            |---MusicDetail.vue 音乐详情组件
-          |---book    书籍组件
-            |---Book.vue 书籍组件
-          |---photo    照片组件
-            |---Photo.vue 照片组件 
-            |---PhotoDetail.vue 照片详情组件
-      |---router
-        |---index.js 配置组件与路径
-      |---App.vue 
-      |---main.js 提供项目入口    
+``` bash
+项目目录结构
+    webpack  
 
-##移动端的AllRound_app 主要使用rem属性。配合使用rem.js,实现移动端的适配。
+      |---build  
 
-##优化了整体的框架，每个模块的标题，颜色，都放在了App.vue中，根据被点击的模块传参改变标题和对应的颜色。这样重用性会更好，修改添加也比较有效。这样在添加一个模块时，只用在App中添加一下，不用每个再引入一下App.vue是一个总的组件。
+      |---src  
 
+        |---assets 资源  
+
+        |---components组件  
+
+          |---common    通用组件  
+
+            |---Header.vue 头部组件  
+
+            |---Footer.vue 脚部组件  
+
+          |---movie    电影组件  
+
+            |---Movie.vue 电影组件  
+
+          |---music    音乐组件  
+
+            |---Music.vue 音乐组件  
+
+          |---book    书籍组件  
+
+            |---Book.vue 书籍组件  
+
+          |---photo    照片组件  
+
+            |---Photo.vue 照片组件  
+
+      |---router  
+
+        |---index.js 配置组件与路径  
+
+      |---App.vue   
+
+      |---main.js 提供项目入口  
+
+```
+移动端的happy_me 主要使用rem属性。配合使用rem.js,实现移动端的适配。  
+
+优化了整体的框架，每个模块的标题，颜色，都放在了App.vue中，根据被点击的模块传参改变标题和对应的颜色。这样重用性会更好，修改添加也比较有效。这样在添加一个模块时，只用在App，Footer中添加一下，不用每个再引入一下Header,Footer. App.vue是一个总的组件。        
+
+做了重大修改 删除了音乐，读书，照片组件，添加了关于个人的组件。里面主要会包含个人数据，登录组件，注册组件，个人数据组件等。
