@@ -1,4 +1,4 @@
-# movie
+# AllRound_App
 
 > A Vue.js project
 
@@ -20,14 +20,14 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 ##主要适用技术栈
+.前端MVVM框架：Vue.JS 2.x
+.开发工作流：Webpack 1.x
+.路由：Vue-Router 2.x
+.数据交互：Axios
+.JS插件：rem.js
+.CSS重置:reset.js
 
-前端MVVM框架：Vue.JS 2.x
-开发工作流：Webpack 1.x
-路由：Vue-Router 2.x
-数据交互：Axios
-JS插件：rem.js
-CSS重置:reset.js
-项目目录结构
+##项目目录结构
     webpack
       |---build
       |---src
@@ -48,7 +48,9 @@ CSS重置:reset.js
       |---router
         |---index.js 配置组件与路径
       |---App.vue 
-      |---main.js 提供项目入口        
-移动端的AllRound_app 主要使用rem属性。配合使用rem.js,实现移动端的适配。
+      |---main.js 提供项目入口    
 
-优化了整体的框架，每个模块的标题，颜色，都放在了App.vue中，根据被点击的模块传参改变标题和对应的颜色。这样重用性会更好，修改添加也比较有效。这样在添加一个模块时，只用在App中添加一下，不用每个再引入一下App.vue是一个总的组件。
+##移动端的AllRound_app 主要使用rem属性。配合使用rem.js,实现移动端的适配。
+
+##优化了整体的框架，每个模块的标题，颜色，都放在了App.vue中，根据被点击的模块传参改变标题和对应的颜色。这样重用性会更好，修改添加也比较有效。这样在添加一个模块时，只用在App中添加一下，不用每个再引入一下App.vue是一个总的组件。
+
