@@ -6,6 +6,7 @@ import Book from '@/components/book/Book'
 import Photo from '@/components/photo/Photo'
 import MovieDetail from '@/components/movie/MovieDetail'
 import MusicDetail from '@/components/music/MusicDetail'
+import BookDetail from '@/components/book/BookDetail'
 import PhotoDetail from '@/components/photo/PhotoDetail'
 
 
@@ -42,6 +43,11 @@ export default new Router({
       path: '/musicdetail',
       name: 'MusicDetail',
       component: MusicDetail
+    },
+    {
+      path: '/bookdetail',
+      name: 'BookDetail',
+      component: BookDetail
     },
     {
       path: '/photodetail',
