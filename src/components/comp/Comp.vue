@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="header" :style="'background-color:'+$store.state.color">
-      <span class="header-btn">首页</span>
+      <span class="header-btn" @click="routerLink('/')">首页</span>
       <h2 class="header-title">{{$store.state.title}}</h2>
     </div> 
     <div class="footer" :style="'background-color:'+$store.state.color">
@@ -41,6 +41,7 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 10;
 }
 .header .header-btn{
   height: 1rem;
