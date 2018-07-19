@@ -26,6 +26,7 @@ export default {
     getData(){
       axios.get('./static/data/photodata.json').then((res)=>{
         this.dataList=res.data.photoData;
+        this.$store.dispatch('setDataListAction', res.data.photoData);
       }).catch(()=>{
 
       })

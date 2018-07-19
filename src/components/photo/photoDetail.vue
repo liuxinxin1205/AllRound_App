@@ -7,6 +7,7 @@ import Vue from 'vue'
 import VueTouch from 'vue-touch'
 import store from '@/vuex/store'
 Vue.use(VueTouch,{name:'v-touch'})
+
 export default {
     data(){
         return{
