@@ -54,5 +54,7 @@ export default {
 }
 </script>
 <style scoped>
-
+div aplayer{
+    font-size: 0.3rem;
+}
 </style>
