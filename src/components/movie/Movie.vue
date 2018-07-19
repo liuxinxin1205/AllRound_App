@@ -43,12 +43,11 @@ export default {
         this.datas = this.datas.concat(res.data.data.movies);
         console.log(this.datas);
         
-        this.isLoading=false;
+        this.isLoading=false; 
         if(res.data.data.movies.length == 0){
           this.isEnd=true;
         }      
       }).catch(()=>{
-
       })
     },
     toDetail(id){
@@ -70,7 +69,7 @@ export default {
       if(scrollTop+clientHeight == scrollHeight){
           if(!this.isLoading){
             if(this.isEnd){
-
+              
           }else{
             this.isLoading = true;
             this.getData();
